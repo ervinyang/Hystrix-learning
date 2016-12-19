@@ -10,8 +10,8 @@
 
     <!-- 依赖版本 -->
     <properties>
-        <hystrix.version>1.3.16</hystrix.version>
-        <hystrix-metrics-event-stream.version>1.1.2</hystrix-metrics-event-stream.version>
+        <hystrix.version>1.5.8</hystrix.version>
+        <hystrix-metrics-event-stream.version>1.5.8</hystrix-metrics-event-stream.version>
     </properties>
 
     <dependencyManagement>
