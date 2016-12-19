@@ -12,6 +12,7 @@ public class CommandFacadeWithPrimarySecondaryTest {
         HystrixRequestContext context = HystrixRequestContext.initializeContext();
         try {
             ConfigurationManager.getConfigInstance().setProperty("primarySecondary.usePrimary", true);
+
             assertEquals("responseFromPrimary-20", new CommandFacadeWithPrimarySecondary(20).execute());
         } finally {
             context.shutdown();
